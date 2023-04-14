@@ -1,0 +1,16 @@
+[package]
+name = "sdl3"
+edition = "2021"
+description = "SDL3 bindings for Rust"
+repository = "https://github.com/revmischa/sdl3-rs"
+# documentation = "https://rust-sdl2.github.io/rust-sdl2/sdl2/"
+version = "0.0.1"
+license = "MIT"
+
+[lib]
+name = "sdl3"
+path = "src/lib.rs"
+
+[dependencies]
+libc = "0.2.141"
+sdl3-sys = "0.0.1+sdl3-dev-2023-01-23"
