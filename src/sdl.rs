@@ -158,11 +158,11 @@ impl Sdl {
     //     TimerSubsystem::new(self)
     // }
     //
-    // /// Initializes the video subsystem.
+    /// Initializes the video subsystem.
     // #[inline]
-    // pub fn video(&self) -> Result<VideoSubsystem, String> {
-    //     VideoSubsystem::new(self)
-    // }
+    pub fn video(&self) -> Result<VideoSubsystem, String> {
+        VideoSubsystem::new(self)
+    }
     //
     /// Obtains the SDL event pump.
     ///

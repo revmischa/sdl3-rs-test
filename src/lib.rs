@@ -14,7 +14,7 @@ pub use crate::sdl::*;
 // mod macros;
 // pub mod audio;
 // pub mod controller;
-// pub mod event;
+pub mod event;
 // pub mod filesystem;
 // pub mod haptic;
 // pub mod hint;
@@ -23,19 +23,19 @@ pub use crate::sdl::*;
 // pub mod log;
 // pub mod messagebox;
 // pub mod mouse;
-// pub mod pixels;
-// pub mod rect;
-// pub mod render;
+pub mod pixels;
+pub mod rect;
+pub mod render;
 // pub mod rwops;
 mod sdl;
 // #[cfg(feature = "hidapi")]
 // pub mod sensor;
-// pub mod surface;
+pub mod surface;
 // pub mod timer;
 // pub mod touch;
 // pub mod url;
 // pub mod version;
-// pub mod video;
+pub mod video;
 
 // modules
 // #[cfg(feature = "gfx")]
@@ -47,6 +47,6 @@ mod sdl;
 // #[cfg(feature = "ttf")]
 // pub mod ttf;
 
-// mod common;
+mod common;
 // // Export return types and such from the common module.
-// pub use crate::common::IntegerOrSdlError;
+pub use crate::common::IntegerOrSdlError;
